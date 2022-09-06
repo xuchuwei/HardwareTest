@@ -1,16 +1,20 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    implementation fileTree(dir: 'libs', include: '*.jar')
+}
+
+repositories {
+    mavenCentral()
 }
 
 android {
-    compileSdkVersion Integer.parseInt(project.SDK_VERSION)
+    compileSdkVersion 33
     buildToolsVersion BUILD_TOOL_VERSION
     defaultConfig {
         applicationId "com.ztemt.test.basic"
         minSdkVersion 18
-        targetSdkVersion 22
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0.1"
     }

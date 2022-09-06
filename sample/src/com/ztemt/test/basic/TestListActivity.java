@@ -31,7 +31,7 @@ public class TestListActivity extends ListActivity implements OnCheckedChangeLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_list);
+        setContentView(R.layout.test_list_activity);
 
         setActionBarOptions();
 
